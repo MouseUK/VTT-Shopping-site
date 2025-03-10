@@ -1,0 +1,285 @@
+/* Ensure header and footer span full width */
+header, footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px; /* Adds spacing between nav items */
+}
+
+/* Keep main content centered without breaking header/footer */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Ensure the add/edit sections look nice */
+.card {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Form layout fixes */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between form fields */
+}
+
+.form-group label {
+    width: 180px; /* Set a fixed width for all labels */
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px; /* Space between label and input */
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    flex: 1; /* Makes inputs take up the remaining space */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Fix button spacing (without using gap) */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.action-buttons button, 
+.action-buttons a {
+    margin: 5px; /* Adds spacing between buttons */
+}
+
+/* Button styling */
+.btn, .btn-delete {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.inventory-list span {
+    white-space: nowrap;
+}
+
+/* Update button */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Delete button */
+.btn-delete {
+    background-color: #d9534f;
+    color: white;
+}
+
+/* Ensure buttons are spaced correctly */
+.action-buttons {
+    display: flex;
+    gap: 10px; /* Spaces out Update and Delete */
+    justify-content: center;
+}
+
+/* Keep footer at the bottom */
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 20px;
+}
+
+/* Style for player and admin roles */
+.role {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style for location display */
+.location {
+    font-size: 1.2em;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Style currency list */
+.currency-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+.currency-list li {
+    margin: 5px 0;
+}
+
+/* Action buttons */
+.action-buttons {
+    margin-top: 15px;
+}
+
+.action-buttons a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.action-buttons a:hover {
+    background-color: #0056b3;
+}
+
+/* Logout button */
+.btn-delete {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #d9534f;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Location Image Styling */
+.location-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.location-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+/* Location Description */
+.location-description {
+    font-size: 1.1em;
+    color: #555;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+
+.btn-delete:hover {
+    background-color: #c9302c;
+}
+
+.transaction-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds space between transactions */
+}
+
+.transaction-box {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.transaction-box.added {
+    background: #e6ffe6; /* Light green background for added transactions */
+    border-color: #4CAF50;
+}
+
+/* Improve table readability */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.styled-table th, 
+.styled-table td {
+    padding: 12px 15px; /* More padding for better spacing */
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.styled-table th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Add zebra striping */
+.styled-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Center align the tick box column */
+.styled-table td:last-child {
+    text-align: center;
+}
+
+/* Add spacing for buttons */
+.btn-mark {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-mark:hover {
+    background-color: #0056b3;
+}
+
+/* Green background for marked sales */
+.added {
+    background-color: #e6ffe6;
+}
+
+/* Adjust status icon */
+.status-marked {
+    font-size: 1.4em;
+}
+
+.transaction-box p {
+    margin: 5px 0;
+}
+
+.status-marked {
+    font-size: 1.2em;
+}
+
